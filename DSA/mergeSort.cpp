@@ -1,4 +1,5 @@
 #include <iostream>
+//function to merge
 void merge(int arr[],int l, int mid, int r){
     int an = mid - l + 1;
     int bn = r- mid;
@@ -29,6 +30,7 @@ void merge(int arr[],int l, int mid, int r){
 
 }
 
+//function to mergeSort
 void mergeSort(int arr[], int l, int r){
     if(l>=r)
         return;
@@ -45,6 +47,7 @@ int main()
     int arr[] = {9,1,5,6,2,3,8,4,7};
     int n = sizeof(arr)/sizeof(arr[0]);
     mergeSort(arr, 0, n-1);
+    //printing the array
     for(int i = 0; i< n ; i++){
         cout<<arr[i]<< " ";
     }
