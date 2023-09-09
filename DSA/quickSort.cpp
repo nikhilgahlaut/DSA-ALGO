@@ -4,7 +4,7 @@
 
 using namespace std;
 
-//function for partitioning sub-array
+//function for partitioning sub-arrayy
 int partition(int arr[], int first, int last){    // 12 18 16 20 30 35
     int pivot = arr[last];
     int  i = first - 1;
