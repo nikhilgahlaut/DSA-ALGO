@@ -1,15 +1,18 @@
-// count sort algorithm
+// countsort algorithm
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
+//count sort logic
 void countSort(vector<int> &arr){
     int n = arr.size();
     int max_ele = arr[0];
+    //picking out maximum element from the array
     for(int i = 0; i<n;i++){
         max_ele = max(arr[i],max_ele);
     }
+    
     //create frequency array
     vector<int> freq(max_ele+1,0);
     for(int i=0;i<n;i++){
