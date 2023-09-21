@@ -10,8 +10,8 @@ int binarySearchRecursion(vector<int> &v,int t, int l, int r){
 }
 
 int main(){
-    vector<int> v = {2,6,9,23,65,79,90,107};
-    int target = 65;
+    vector<int> v = {2,6,9,23,65,79,90,107,108};
+    int target = 79;
     int n = v.size();
     cout<<binarySearchRecursion(v,target,0,n-1);
     return 0;
