@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+//calling binary function
 int binarySearch(vector<int> &v,int t){
     int l = 0;
     int r = v.size() - 1;
