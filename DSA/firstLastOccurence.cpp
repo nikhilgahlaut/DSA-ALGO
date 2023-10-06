@@ -44,9 +44,14 @@ int firstOccurence(vector<int> &v, int n, int t){
 int main(){
     vector<int> v = {1,4,6,6,6,6,8,10,19};
     int n = v.size();
-    int target = 6;
-    cout<<firstOccurence(v,n,target)<<endl;
-    // cout<<"print";
-    cout<<lastOccurence(v,n,target)-1;
+    int target;
+    cout<<"now enter the target element ot  find first and last occurence"<<endl;
+    cin>>target;
+    vector<int> ans;
+    ans.push_back(firstOccurence(v,n,target));
+    ans.push_back(lastOccurence(v,n,target)-1);
+    for(int i = 0; i<2;i++){
+        cout<<ans[i]<<",";
+    }
     return 0;
 }
