@@ -1,4 +1,5 @@
 /.vscode
 bucketSort
 binarySearch
-
+countSort
+selectionSort
