@@ -26,7 +26,7 @@ int mountainArray(vector<int> &arr,int n){
 }
 
 int main(){
-    vector<int> arr ={0,3,2,1};
+    vector<int> arr ={1,2,0,0};
     int n = arr.size();
     cout<<mountainArray(arr, n);
     return 0;
