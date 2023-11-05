@@ -23,7 +23,7 @@ void quickSort(int arr[], int first, int last){
     if(first>=last){
         return;
     }
-    int pi = partition(arr,first ,last);
+    int pi = partition(arr,first ,last); 
     quickSort(arr,first,pi-1);
     quickSort(arr,pi + 1, last);
 }
