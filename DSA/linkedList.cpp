@@ -12,11 +12,37 @@ class Node{
     }
 };
 
+//inserting at head
+void insertAtHead(Node* &head, int val){
+    Node *new_node = new Node(val);
+    new_node -> next = head;
+    head = new_node;
+}
+
+//display linkedlist
+
+void display(Node* head){
+    Node *temp = head;
+    while(temp != NULL){
+        cout<<temp->val<<"->";
+        temp = temp->next;
+    }
+    cout<<"NULL"<<endl;
+}
+
 int main(){
 
-    Node* n = new Node(2);
-    cout<<n->val<<endl;
-    cout<<"next ->"<<n->next;
+    Node* head = NULL;
+    insertAtHead(head,2);
+    display(head);
+
+    insertAtHead(head,3);
+    display(head);
+
+    insertAtHead(head,4);
+    display(head);
+    
+
 
     return 0;
 }
