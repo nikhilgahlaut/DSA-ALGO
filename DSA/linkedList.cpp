@@ -19,8 +19,17 @@ void insertAtHead(Node* &head, int val){
     head = new_node;
 }
 
-//display linkedlist
+//inserting at tail
+void insertAtTail(Node* &head, int val){
+    Node* new_node = new Node(val);
+    Node* temp = head;
+    while(temp ->next !=NULL){
+        temp = temp->next;
+    }
+    temp->next = new_node;
+}
 
+//display linkedlist
 void display(Node* head){
     Node *temp = head;
     while(temp != NULL){
@@ -42,7 +51,9 @@ int main(){
     insertAtHead(head,4);
     display(head);
     
-
+    //at tail
+    insertAtTail(head,1);
+    display(head);
 
     return 0;
 }
