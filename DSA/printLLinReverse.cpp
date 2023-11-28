@@ -53,6 +53,7 @@ int main(){
     ll.insertAtTail(3);
     ll.insertAtTail(4);
     ll.insertAtTail(5);
+    ll.insertAtTail(6);
     ll.display();
 
     reverseLinkedList(ll.head);
